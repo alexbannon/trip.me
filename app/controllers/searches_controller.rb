@@ -1,4 +1,4 @@
-class SearchesController < ActionController::Base
+class SearchesController < ApplicationController
   def homepage
   end
 end

@@ -1,0 +1,20 @@
+nav {
+  background-color: grey;
+  border-bottom: 5px solid black;
+}
+h1 {
+  margin-left: 5%;
+  display: inline-block;
+}
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.box {
+  display: inline-block;
+  width: 25%;
+  height: 5em;
+  border: 1px solid black;
+  margin: 0;
+}
