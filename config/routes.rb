@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  root 'search#home'
+  root 'searches#homepage'
 end
