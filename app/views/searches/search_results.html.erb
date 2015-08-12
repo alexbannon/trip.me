@@ -1,3 +1,8 @@
+<div id="top_image">
+  <% @photos.each do |photo| %>
+    <img src = "<%=photo%>" class="instagram_photo">
+  <% end %>
+</div>
 <div class="row search_container">
   <div class="column column-12">
     <input type="text" placeholder="Search Hashtags..." class="search_bar">
