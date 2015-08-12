@@ -13,3 +13,51 @@
  *= require_tree .
  *= require_self
  */
+* {
+  box-sizing: border-box;
+}
+.column {
+  text-align: center;
+  float: left;
+}
+img {
+  width: 100%;
+  opacity: 0.5;
+}
+img.resize{
+    width: 100%;
+    height: auto;
+}
+html, img {
+  height: 100%;
+}
+.search_container {
+  height: 150px;
+  line-height: 150px;
+}
+.search_bar {
+  border: 5px solid rgb(200,200,200);
+  padding-left: 10px;
+  border-radius: 50px;
+  font-size: 2em;
+}
+.search_bar:focus {
+  outline: none;
+  border-radius: 50px;
+  box-shadow: 0 0 5px 1px #969696
+}
+.module {
+  margin: 10px 50px;
+}
+.column-1 { width: 8.333%; }
+.column-2 { width: 16.66%; }
+.column-3 { width: 25%; }
+.column-4 { width: 33.33%; }
+.column-5 { width: 41.66%; }
+.column-6 { width: 50%; }
+.column-7 { width: 58.33%; }
+.column-8 { width: 66.66%; }
+.column-9 { width: 75%; }
+.column-10 { width: 83.33%; }
+.column-11 { width: 91.66%; }
+.column-12 { width: 100%; }
