@@ -30,10 +30,9 @@
     <br>
 </form>
 
-  <% @instagram_photos.each do |photo| %>
+  <% @instagram_photos.each do |instagram| %>
 
-  <%= image_tag photo.images.standard_resolution.url %>
+  <%= instagram.location %>
+  <%= image_tag instagram.images.standard_resolution.url %>
 
   <% end %>
-
-  <div id='map'></div>
