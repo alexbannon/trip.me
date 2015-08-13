@@ -1,24 +1,28 @@
 class SearchesController < ApplicationController
 
   def homepage
-
+    @instagram_photos = Instagram.tag_recent_media('victory', {:count => 10})
   end
 
   def search_results
-    response = HTTParty.get("https://api.instagram.com/v1/tags/potato/media/recent?access_token=")
-    @photos = []
-    @photos.push(response["data"][0]["images"]["standard_resolution"]["url"])
-    @photos.push(response["data"][1]["images"]["standard_resolution"]["url"])
-    @photos << response["data"][2]["images"]["standard_resolution"]["url"]
-    @photos << response["data"][3]["images"]["standard_resolution"]["url"]
-    @photos << response["data"][4]["images"]["standard_resolution"]["url"]
-    @photos << response["data"][5]["images"]["standard_resolution"]["url"]
-    @photos << response["data"][6]["images"]["standard_resolution"]["url"]
-    @photos << response["data"][7]["images"]["standard_resolution"]["url"]
-    @photos << response["data"][8]["images"]["standard_resolution"]["url"]
-    @photos << response["data"][9]["images"]["standard_resolution"]["url"]
-    puts "-" * 50
-    puts @photos
-  end
 
+    @usersearch = params[:guestsearch]
+    @instagram_photos = Instagram.tag_recent_media(@usersearch, {:count => 50})
+    @photos_with_location = []
+    for photo in @instagram_photos do
+      if photo.location != nil
+        if @photos_with_location.length > 9
+          break
+        else
+          @photos_with_location << photo
+        end
+      end
+    end
+    puts "-" * 100
+    puts @usersearch
+    puts "-" * 100
+    puts @instagram_photos
+    puts "-" * 100
+    puts @photos_with_location
+  end
 end

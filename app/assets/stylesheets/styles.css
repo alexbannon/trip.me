@@ -47,3 +47,10 @@ input {
   -moz-transform:  scale(1.5,1.5);
   transform: scale(1.5,1.5);
 }
+
+#map { height: 500px; width: 500px; margin-top: 50px; }
+
+.instagram_photo {
+  width: 8em;
+  height: 8em;
+}
