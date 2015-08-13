@@ -1,6 +1,6 @@
 <header>
   <nav>
-    <h1><%=link_to "Trip.me", "/search_results"%></h1><img src="logo.png"><input type="text" placeholder="Search">
+    <h1><%=link_to "Trip.me", "/search_results"%></h1><img src="logo.png"><form action="/search_results"><input type="search" placeholder="Search" name="guestsearch"></form>
   </nav>
 </header>
 
@@ -34,6 +34,5 @@
 
   <%= instagram.location %>
   <%= image_tag instagram.images.standard_resolution.url %>
-  <% end %>
 
-  <div id='map'></div>
+  <% end %>
