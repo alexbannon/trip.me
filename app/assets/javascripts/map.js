@@ -1,8 +1,5 @@
 $(document).ready(function() {
 
-
-
-  $("h1").on("click", function(){
     var lat     = 37.7808851;
     var long    = -122.3948632;
 
@@ -18,8 +15,5 @@ $(document).ready(function() {
           })
         }).addTo(map);
       var cir = L.circle([lat, long], 1000).addTo(map);
-
-
-});
 
     });
