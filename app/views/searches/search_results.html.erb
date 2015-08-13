@@ -1,9 +1,3 @@
-<div class="row search_container">
-  <div class="column column-12">
-    <form action="/search_results"><input type="search" placeholder="Search" name="guestsearch"></form>
-  </div>
-</div>
-
 <% @photos_with_location.each do |photo| %>
   <%= image_tag photo.images.low_resolution.url, :class => "instagram_photo", :id => "#{photo.location}" %>
 <% end %>
