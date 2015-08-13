@@ -4,6 +4,6 @@
   </div>
 </div>
 
-<% @instagram_photos.each do |photo| %>
-  <%= image_tag photo.images.standard_resolution.url, :class => "instagram_photo" %>
+<% @photos_with_location.each do |photo| %>
+  <%= image_tag photo.images.low_resolution.url, :class => "instagram_photo" %>
 <% end %>
