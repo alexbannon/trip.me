@@ -12,11 +12,14 @@ h1 {
 .container {
   width: 70%;
   margin: 3em auto;
-  -webkit-perspective: 800px;
-  -moz-perspective: 800px;
-  perspective: 800px;
+  -webkit-perspective: 100px;
+  -moz-perspective: 100px;
+  perspective: 100px;
 }
-
+img {
+  max-width: 100%;
+  /*max-height: 100%;*/
+}
 .box {
   display: inline-block;
   width: 24%;
@@ -24,8 +27,6 @@ h1 {
   height: 7em;
   border: 1px solid black;
   margin: 0;
-  background-image: url("https://usatthebiglead.files.wordpress.com/2014/05/hulk-hogan-ear-cup.jpg");
-  background-size: contain;
   transition:-webkit-transform .5s ease-in-out;
   transition:-moz-transform .5s ease-in-out;
   transition: transform .5s ease-in-out;
@@ -43,8 +44,7 @@ input {
   box-shadow: 2px 2px 5px;
 }
 .box:hover {
-  -webkit-transform: translateZ( 100px ); /* Throws the cards at you */
-  -moz-transform: translateZ( 100px );
-  transform: translateZ( 100px );
-  z-index: 99;
+  -webkit-transform: translateZ( 10px ) scale(1.8,1.8); /* Throws the cards at you */
+  -moz-transform: translateZ( 10px ) scale(1.8,1.8);
+  transform: translateZ( 10px ) scale(1.8,1.8);
 }
