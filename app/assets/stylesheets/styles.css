@@ -46,7 +46,6 @@ input {
   -webkit-transform: translateZ( 100px ); /* Throws the cards at you */
   -moz-transform: translateZ( 100px );
   transform: translateZ( 100px );
-  z-index: 99;
 }
 
 .instagram_photo {
