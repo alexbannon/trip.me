@@ -21,8 +21,5 @@
 
 
   <% @instagram_photos.each do |photo| %>
-
-  <%= photo.location %>
-  <%= image_tag photo.images.standard_resolution.url %>
-
+    <div class="box"><%= image_tag photo.images.standard_resolution.url %></div>
   <% end %>
