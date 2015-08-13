@@ -1,20 +1,5 @@
-<head>
-  <script src='https://api.mapbox.com/mapbox.js/v2.2.1/mapbox.js'></script>
-<link href='https://api.mapbox.com/mapbox.js/v2.2.1/mapbox.css' rel='stylesheet' />
-<style>
-  #map { height: 500px; width: 500px; margin-top: 50px; }
-</style>
-</head>
-
-<body>
-
-
-  <h1>Press Me...if YOU DARE!</h1>
-  <div id='map'></div>
-
+<h2>Hash Tag Results</h2>
 
   <% @photos_with_location.each do |photo| %>
     <%= image_tag photo.images.low_resolution.url, :class => "instagram_photo", :id => "#{photo.location}" %>
   <% end %>
-
-</body>
