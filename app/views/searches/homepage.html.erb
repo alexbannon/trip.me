@@ -1,6 +1,6 @@
 <header>
   <nav>
-    <h1><%=link_to "Trip.me", "/search_results"%></h1><img src="logo.png"><input type="text" placeholder="Search">
+    <h1><%=link_to "Trip.me", "/search_results"%></h1><img src="logo.png"><form action="/search_results"><input type="search" placeholder="Search" name="guestsearch"></form>
   </nav>
 </header>
 
@@ -30,9 +30,9 @@
     <br>
 </form>
 
-  <% @instagram.each do |instagram| %>
+  <% @instagram_photos.each do |photo| %>
 
-  <%= image_tag instagram.images.standard_resolution.url %>
+  <%= image_tag photo.images.standard_resolution.url %>
 
   <% end %>
 
