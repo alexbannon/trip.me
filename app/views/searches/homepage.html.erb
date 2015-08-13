@@ -1,28 +1,6 @@
 
-
-  <div class="container">
-    <div class="box"><%= image_tag "shoes.jpg" %></div>
-    <div class="box"><%= image_tag "shoes.jpg" %></div>
-    <div class="box"><%= image_tag "shoes.jpg" %></div>
-    <div class="box"><%= image_tag "shoes.jpg" %></div>
-    <div class="box"><%= image_tag "shoes.jpg" %></div>
-    <div class="box"><%= image_tag "shoes.jpg" %></div>
-    <div class="box"><%= image_tag "shoes.jpg" %></div>
-    <div class="box"><%= image_tag "shoes.jpg" %></div>
-    <div class="box"><%= image_tag "shoes.jpg" %></div>
-    <div class="box"><%= image_tag "shoes.jpg" %></div>
-    <div class="box"><%= image_tag "shoes.jpg" %></div>
-    <div class="box"><%= image_tag "shoes.jpg" %></div>
-    <div class="box"><%= image_tag "shoes.jpg" %></div>
-    <div class="box"><%= image_tag "shoes.jpg" %></div>
-    <div class="box"><%= image_tag "shoes.jpg" %></div>
-    <div class="box"><%= image_tag "shoes.jpg" %></div>
-  </div>
-
-
+<div class="container">
   <% @instagram_photos.each do |photo| %>
-
-  <%= photo.location %>
-  <%= image_tag photo.images.standard_resolution.url %>
-
+    <div class="box"><%= image_tag photo.images.standard_resolution.url %></div>
   <% end %>
+</div>
