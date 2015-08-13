@@ -5,6 +5,7 @@ class SearchesController < ApplicationController
   end
 
   def search_results
+
     @usersearch = params[:guestsearch]
     @instagram_photos = Instagram.tag_recent_media(@usersearch, {:count => 10})
 
