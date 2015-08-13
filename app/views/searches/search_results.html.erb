@@ -1,9 +1,9 @@
 <div class="row search_container">
   <div class="column column-12">
-    <input type="text" placeholder="Search Hashtags..." class="search_bar">
+    <form action="/search_results"><input type="search" placeholder="Search" name="guestsearch"></form>
   </div>
 </div>
 
 <% @instagram_photos.each do |photo| %>
-  <%= image_tag photo.images.standard_resolution.url %>
+  <%= image_tag photo.images.standard_resolution.url, :class => "instagram_photo" %>
 <% end %>

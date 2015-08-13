@@ -50,4 +50,8 @@ input {
 }
 
 #map { height: 500px; width: 500px; margin-top: 50px; }
-</style>
+
+.instagram_photo {
+  width: 8em;
+  height: 8em;
+}
