@@ -13,7 +13,7 @@
  *= require_tree .
  *= require_self
  */
-* {
+/** {
   box-sizing: border-box;
 }
 .column {
@@ -60,4 +60,4 @@ html, img {
 .column-9 { width: 75%; }
 .column-10 { width: 83.33%; }
 .column-11 { width: 91.66%; }
-.column-12 { width: 100%; }
+.column-12 { width: 100%; }*/
