@@ -1,8 +1,4 @@
-<header>
-  <nav>
-    <%= image_tag "logo.png", :class => "logo" %><input type="text" placeholder="Search">
-  </nav>
-</header>
+
 
   <div class="container">
     <div class="box"><%= image_tag "shoes.jpg" %></div>
@@ -23,11 +19,6 @@
     <div class="box"><%= image_tag "shoes.jpg" %></div>
   </div>
 
-  <form>
-    HashTag Search:<br>
-      <input class="hashTag" type="text" name="hashTag">
-    <br>
-</form>
 
   <% @instagram_photos.each do |photo| %>
 
