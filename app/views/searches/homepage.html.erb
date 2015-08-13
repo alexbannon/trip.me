@@ -1,5 +1,7 @@
 <header>
   <nav>
+    <h2>Test Button</h2>
+
     <h1><%=link_to "Trip.me", "/search_results"%>
     </h1>
   </nav>
@@ -14,3 +16,17 @@
     <div class="box"></div>
     <div class="box"></div>
   </div>
+
+  <form>
+    HashTag Search:<br>
+      <input class="hashTag" type="text" name="hashTag">
+    <br>
+</form>
+
+  <% @instagram.each do |instagram| %>
+
+  <%= image_tag instagram.images.standard_resolution.url %>
+
+  <% end %>
+
+  <div id='map'></div>
