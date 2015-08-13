@@ -5,5 +5,5 @@
 </div>
 
 <% @photos_with_location.each do |photo| %>
-  <%= image_tag photo.images.low_resolution.url, :class => "instagram_photo" %>
+  <%= image_tag photo.images.low_resolution.url, :class => "instagram_photo", :id => "#{photo.location}" %>
 <% end %>
