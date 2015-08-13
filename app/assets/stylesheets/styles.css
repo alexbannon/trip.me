@@ -48,3 +48,8 @@ input {
   transform: translateZ( 100px );
   z-index: 99;
 }
+
+.instagram_photo {
+  width: 250px;
+  height: 250px;
+}
