@@ -25,4 +25,7 @@ class SearchesController < ApplicationController
     puts "-" * 100
     puts @photos_with_location
   end
+  def search
+
+  end
 end
