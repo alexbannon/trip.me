@@ -24,6 +24,9 @@ class SearchesController < ApplicationController
     puts @instagram_photos.length
     puts "-" * 100
     puts @photos_with_location
+    puts "-" * 100
+    puts @photos_with_location[0].location[15...80]
+
   end
   def search
 
