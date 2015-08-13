@@ -32,7 +32,6 @@
 
   <% @instagram_photos.each do |instagram| %>
 
-  <%= instagram.location %>
   <%= image_tag instagram.images.standard_resolution.url %>
 
   <% end %>
