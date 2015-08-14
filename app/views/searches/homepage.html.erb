@@ -3,7 +3,7 @@
 <div class="container">
 
   <% @instagram_photos.each do |photo| %>
-    <div class="box"><%= image_tag photo.images.standard_resolution.url %></div>
+    <%= image_tag photo.images.standard_resolution.url, :class =>  "instagram_photo" %>
   <% end %>
 
 </div>
