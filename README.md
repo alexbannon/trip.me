@@ -8,6 +8,10 @@ A collaborative project between UX and Dev with a very short turnaoround. Projec
 - Kristin Greenslit: https://github.com/kristingreenslit
 - Ryan Kahle: https://github.com/Ryan-321
 
+# Deployed on Heroku
+
+https://trip-me.herokuapp.com/
+
 # Planning
 
 For design studio results, prototypes, logos, and other research, see:
