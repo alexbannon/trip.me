@@ -46,7 +46,7 @@ img {
 #map {
   height: 500px;
   margin-top: 50px;
-  width: 500px;
+  width: 100%;
 }
 .search_form {
   display: inline-block;
