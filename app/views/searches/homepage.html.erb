@@ -4,7 +4,7 @@
 
   <% @instagram_photos.each do |photo| %>
     <% if photo.location.nil? %>
-      <div class="box"><%= link_to image_tag(photo.images.standard_resolution.url), "/geo_results/lat_51.5072_long_0.1275" %></div>
+      <div class="box"><%= link_to image_tag(photo.images.standard_resolution.url), "/geo_results/lat_51.500909_long_-0.124620" %></div>
     <% else %>
       <div class="box"><%= link_to image_tag(photo.images.standard_resolution.url), "/geo_results/lat_#{photo.location.latitude}_long_#{photo.location.longitude}" %></div>
     <% end %>
