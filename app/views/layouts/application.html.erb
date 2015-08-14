@@ -10,10 +10,15 @@
 </head>
 <body>
   <header>
-    <nav>
+    <div id="top_bar">
       <%= link_to(image_tag("logo.png", :class => "logo"), root_url) %>
+<<<<<<< HEAD
       <div class="searchbar"><form action="/search_results"><input type="search" placeholder="Search" name="guestsearch"></form></div>
     </nav>
+=======
+      <form action="/search_results" class="search_form"><input type="search" placeholder="Search" name="guestsearch" class="search_bar"></form>
+    </div>
+>>>>>>> 930181a17375ca5313f8688fd89db5818db8cb9b
   </header>
 
 
