@@ -9,3 +9,7 @@ A collaborative project between UX and Dev with a very short turnaoround. Projec
 - Ryan Kahle: https://github.com/Ryan-321
 
 # Planning
+
+For design studio results, prototypes, logos, and other research, see:
+
+https://github.com/alexbannon/trip.me/tree/master/planning
