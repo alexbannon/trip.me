@@ -11,7 +11,7 @@
 <body>
   <header>
     <nav>
-      <%= image_tag "logo.png", :class => "logo" %>
+      <%= link_to(image_tag("logo.png", :class => "logo"), root_url) %>
       <form action="/search_results"><input type="search" placeholder="Search" name="guestsearch"></form>
     </nav>
   </header>
