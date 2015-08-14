@@ -5,14 +5,13 @@
 <body>
   <h2>Geo Results</h2>
 
-  <div class="wrapper">
+
     <div id='map'></div>
 
-    <div id='map_right'>
+    <div class="owl-carousel">
       <% @photos_with_geo.each do |photo| %>
-        <%= image_tag photo.images.low_resolution.url, :class => "instagram_photo", :id => "#{photo.location.latitude}_#{photo.location.longitude}"%>
+        <div><%= image_tag photo.images.low_resolution.url, :id => "#{photo.location.latitude}_#{photo.location.longitude}"%></div>
       <% end %>
     </div>
-
-  </div>
+      <script>$(".owl-carousel").owlCarousel();</script>
 </body>
