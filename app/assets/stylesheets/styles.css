@@ -1,59 +1,60 @@
 body {
+  background-color: #f3f3f3;
   margin:0;
-  background-color: #f3f3f3
-}
-nav {
-  background-color: #001F4C;
-  position: relative;
-  height: 5.5em;
 }
 h1 {
-  margin-left: 5%;
   display: inline-block;
-}
-.container {
-  width: 80%;
-  margin: 3em auto;
-
+  margin-left: 5%;
 }
 img {
   max-width: 100%;
 }
-.logo{
-  width: 6em;
+input {
+  background-color:#001433;
+  border-radius: 5px;
   position: absolute;
-  top: 31%;
-  left: 3%;
+  color: white;
+  left: 60%;
+  padding: 10px;
+  top: 20%;
+  width: 300px;
+}
+nav {
+  background-color: #001F4C;
+  height: 5.5em;
+  position: relative;
 }
 .box {
   display: inline-block;
-  width: 30%;
-  margin:10px;
   height: 220px;
+  margin:10px;
   transition:-webkit-transform .5s ease-in-out;
   transition:-moz-transform .5s ease-in-out;
   transition: transform .5s ease-in-out;
+  width: 30%;
 
-}
-input {
-  position: absolute;
-  top: 20%;
-  left: 60%;
-  width: 300px;
-  border-radius: 5px;
-  padding: 10px;
-  background-color:#001433;
-  color: white;
 }
 .box:hover {
-  -webkit-transform: scale(1.5,1.5);
   -moz-transform:  scale(1.5,1.5);
+  -webkit-transform: scale(1.5,1.5);
   transform: scale(1.5,1.5);
 }
-
-#map { height: 500px; width: 500px; margin-top: 50px; }
-
+.container {
+  margin: 3em auto;
+  width: 80%;
+}
 .instagram_photo {
-  width: 8em;
   height: 8em;
+  width: 8em;
+}
+.logo{
+  left: 3%;
+  position: absolute;
+  top: 31%;
+  width: 6em;
+}
+#map {
+  height: 500px;
+  margin-top: 50px; 
+  width: 500px;
 }
