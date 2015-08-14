@@ -1,10 +1,11 @@
 $(document).ready(function() {
+
     var lat_long_trial = window.location.pathname;
-    console.log(lat_long_trial)
-    var lat_long = $(".instagram_photo").eq(0).attr('id')
-    lat_long_array = lat_long.split("_")
-    var lat = lat_long_array[0]
-    var long = lat_long_array[1]
+    console.log(lat_long_trial);
+    var lat_long = $(".instagram_photo").eq(0).attr('id');
+    lat_long_array = lat_long.split("_");
+    var lat = lat_long_array[0];
+    var long = lat_long_array[1];
     // var lat     = 37.7808851;
     // var long    = -122.3948632;
 
