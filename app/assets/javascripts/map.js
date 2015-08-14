@@ -25,4 +25,4 @@ $(document).ready(function(){
         }).addTo(map);
       var cir = L.circle([lat, long], 1000).addTo(map);
       map.scrollWheelZoom.disable();
-  })
+  });
