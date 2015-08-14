@@ -3,6 +3,6 @@
 
 <div class="container">
   <% @photos_with_location.each do |photo| %>
-    <%=link_to image_tag(photo.images.low_resolution.url, :class => "instagram_photo clickable_photo"), "/geo_results/lat_#{photo.location.latitude}_long_#{photo.location.longitude}"%>
+    <div class="box"><%=link_to image_tag(photo.images.low_resolution.url, :class => "clickable_photo"), "/geo_results/lat_#{photo.location.latitude}_long_#{photo.location.longitude}"%></div>
   <% end %>
 </div>

@@ -6,6 +6,9 @@ h1 {
   display: inline-block;
   margin-left: 5%;
 }
+h2 {
+  text-align: center;
+}
 img {
   max-width: 100%;
 }
@@ -32,12 +35,11 @@ nav {
   transition:-moz-transform .5s ease-in-out;
   transition: transform .5s ease-in-out;
   width: 30%;
-
 }
 .box:hover {
-  -moz-transform:  scale(1.5,1.5);
-  -webkit-transform: scale(1.5,1.5);
-  transform: scale(1.5,1.5);
+  -moz-transform:  scale(1.2,1.2);
+  -webkit-transform: scale(1.2,1.2);
+  transform: scale(1.2,1.2);
 }
 .container {
   margin: 3em auto;

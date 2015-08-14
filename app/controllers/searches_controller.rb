@@ -1,7 +1,7 @@
 class SearchesController < ApplicationController
 
   def homepage
-    @instagram_photos = Instagram.tag_recent_media('vacation', {:count => 10})
+    @instagram_photos = Instagram.tag_recent_media('vacation', {:count => 30})
   end
 
   def search_results
