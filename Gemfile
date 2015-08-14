@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'owlcarousel-rails', '~> 1.1.3.3'
 gem 'httparty'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.3'
