@@ -12,29 +12,6 @@ h2 {
 img {
   max-width: 100%;
 }
-.search_form {
-  display: inline-block;
-  margin: 0 auto;
-}
-.search_bar {
-  display: inline-block;
-  background-color: rgb(14, 26, 58);
-  font-size: 0.9em;
-  border: 0;
-  border-radius: 10px;
-  color: white;
-  height: 1em;
-  width: 15em;
-  padding: 10px 10px 10px 20px;
-  position: absolute;
-  top: 33%;
-  right: 10.5%;
-}
-#top_bar {
-  background-color: rgb(26, 53, 89);
-  height: 5.5em;
-  position: relative;
-}
 .box {
   display: inline-block;
   height: 220px;
@@ -70,4 +47,27 @@ img {
   height: 500px;
   margin-top: 50px;
   width: 500px;
+}
+.search_form {
+  display: inline-block;
+  margin: 0 auto;
+}
+.search_bar {
+  display: inline-block;
+  background-color: rgb(14, 26, 58);
+  font-size: 0.9em;
+  border: 0;
+  border-radius: 10px;
+  color: white;
+  height: 1em;
+  width: 15em;
+  padding: 10px 10px 10px 20px;
+  position: absolute;
+  top: 33%;
+  right: 10.5%;
+}
+#top_bar {
+  background-color: rgb(26, 53, 89);
+  height: 5.5em;
+  position: relative;
 }
