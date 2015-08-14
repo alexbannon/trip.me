@@ -16,7 +16,15 @@ h1 {
   margin: 3em auto;
 }
 img {
-  max-width: 100%;
+  transition:-webkit-transform .5s ease-in-out;
+  transition:-moz-transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+  border-radius: 10px;
+}
+img:hover {
+  -webkit-transform: scale(1.5,1.5);
+  -moz-transform:  scale(1.5,1.5);
+  transform: scale(1.5,1.5);
 }
 .logo{
   width: 5em;
@@ -25,10 +33,10 @@ img {
   left: 10%;
 }
 .box {
-  display: inline-block;
-  width: 24.5%;
+  /*display: inline-block;*/
+  /*width: 25%;
+  height: 220px;*/
   margin:0;
-  height: 220px;
   transition:-webkit-transform .5s ease-in-out;
   transition:-moz-transform .5s ease-in-out;
   transition: transform .5s ease-in-out;
@@ -51,6 +59,6 @@ input {
 #map { height: 500px; width: 500px; margin-top: 50px; }
 
 .instagram_photo {
-  width: 8em;
-  height: 8em;
+  width: 10em;
+  height: 10em;
 }
