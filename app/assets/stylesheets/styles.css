@@ -1,9 +1,9 @@
 body {
   margin:0;
+  background-color: #f3f3f3
 }
 nav {
-  background-color: lemonchiffon;
-  border-bottom: 5px solid black;
+  background-color: #001F4C;
   position: relative;
   height: 5.5em;
 }
@@ -12,8 +12,9 @@ h1 {
   display: inline-block;
 }
 .container {
-  width: 70%;
+  width: 80%;
   margin: 3em auto;
+
 }
 img {
   transition:-webkit-transform .5s ease-in-out;
@@ -27,19 +28,20 @@ img:hover {
   transform: scale(1.5,1.5);
 }
 .logo{
-  width: 5em;
+  width: 6em;
   position: absolute;
-  top: 5%;
-  left: 10%;
+  top: 31%;
+  left: 3%;
 }
 .box {
-  /*display: inline-block;*/
-  /*width: 25%;
-  height: 220px;*/
-  margin:0;
+  display: inline-block;
+  width: 30%;
+  margin:10px;
+  height: 220px;
   transition:-webkit-transform .5s ease-in-out;
   transition:-moz-transform .5s ease-in-out;
   transition: transform .5s ease-in-out;
+
 }
 input {
   position: absolute;
@@ -48,7 +50,8 @@ input {
   width: 300px;
   border-radius: 5px;
   padding: 10px;
-  box-shadow: 2px 2px 5px;
+  background-color:#001433;
+  color: white;
 }
 .box:hover {
   -webkit-transform: scale(1.5,1.5);
