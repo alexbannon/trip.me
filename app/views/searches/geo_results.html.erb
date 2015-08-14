@@ -8,12 +8,16 @@
 
 <body>
 
-<h2>Geo Results</h2>
+  <h2>Geo Results</h2>
 
-  <div id='map'></div>
+  <div class="wrapper">
+    <div id='map'></div>
 
-  <% @photos_with_geo.each do |photo| %>
-    <%= image_tag photo.images.low_resolution.url, :class => "instagram_photo", :id => "#{photo.location.latitude}_#{photo.location.longitude}"%>
-  <% end %>
+    <div id='map_right'>
+      <% @photos_with_geo.each do |photo| %>
+        <%= image_tag photo.images.low_resolution.url, :class => "instagram_photo", :id => "#{photo.location.latitude}_#{photo.location.longitude}"%>
+      <% end %>
+    </div>
 
+  </div>
 </body>

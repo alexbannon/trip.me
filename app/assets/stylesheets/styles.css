@@ -1,47 +1,22 @@
+/*******   GENERAL *********/
+
 body {
   margin:0;
   background-color: #f3f3f3
 }
+.container {
+  width: 80%;
+  margin: 3em auto;
+}
+h2 {
+  text-align: center;
+}
+/******* HEADER  *********/
+
 nav {
   background-color: #001F4C;
   position: relative;
   height: 5.5em;
-}
-h1 {
-  margin-left: 5%;
-  display: inline-block;
-}
-.container {
-  width: 80%;
-  margin: 3em auto;
-
-}
-img {
-  transition:-webkit-transform .5s ease-in-out;
-  transition:-moz-transform .5s ease-in-out;
-  transition: transform .5s ease-in-out;
-  border-radius: 10px;
-}
-img:hover {
-  -webkit-transform: scale(1.5,1.5);
-  -moz-transform:  scale(1.5,1.5);
-  transform: scale(1.5,1.5);
-}
-.logo{
-  width: 6em;
-  position: absolute;
-  top: 31%;
-  left: 3%;
-}
-.box {
-  display: inline-block;
-  width: 30%;
-  margin:10px;
-  height: 220px;
-  transition:-webkit-transform .5s ease-in-out;
-  transition:-moz-transform .5s ease-in-out;
-  transition: transform .5s ease-in-out;
-
 }
 input {
   position: absolute;
@@ -53,15 +28,47 @@ input {
   background-color:#001433;
   color: white;
 }
-.box:hover {
+h1 {
+  margin-left: 5%;
+  display: inline-block;
+}
+.logo{
+  width: 6em;
+  height: auto;
+  position: absolute;
+  top: 31%;
+  left: 3%;
+}
+
+
+/********   IMAGES   ********/
+img {
+  transition:-webkit-transform .5s ease-in-out;
+  transition:-moz-transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+  border-radius: 10px;
+}
+img:hover {
   -webkit-transform: scale(1.5,1.5);
   -moz-transform:  scale(1.5,1.5);
   transform: scale(1.5,1.5);
 }
-
-#map { height: 500px; width: 500px; margin-top: 50px; }
-
 .instagram_photo {
   width: 10em;
   height: 10em;
+}
+
+/********   MAP VIEW   ********/
+
+#map {
+  height: 500px;
+  width: 30%;
+  margin-left:5%;
+  display: inline-block;
+  margin-top: 3em;
+}
+#map_right {
+  display: inline-block;
+  width: 40%;
+  margin-top: 3em;
 }
