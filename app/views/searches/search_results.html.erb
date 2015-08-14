@@ -1,6 +1,5 @@
 <h2>Hash Tag Results</h2>
 
-  <% @photos_with_location.each do |photo| %>
-    <%= photo.location[15...80] %>
-    <%=link_to image_tag(photo.images.low_resolution.url, :class => "instagram_photo clickable_photo", :id => "#{photo.location}"), "/location/#{photo.location}"%>
-  <% end %>
+<% @photos_with_location.each do |photo| %>
+  <%=link_to image_tag(photo.images.low_resolution.url, :class => "instagram_photo clickable_photo"), "/geo_results/lat_#{photo.location.latitude}_long_#{photo.location.longitude}"%>
+<% end %>

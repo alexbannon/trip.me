@@ -43,6 +43,7 @@ input {
   border-radius: 5px;
   padding: 10px;
   background-color:#001433;
+  color: white;
 }
 .box:hover {
   -webkit-transform: scale(1.5,1.5);

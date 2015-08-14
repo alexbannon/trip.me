@@ -13,7 +13,7 @@
   <div id='map'></div>
 
   <% @photos_with_geo.each do |photo| %>
-    <%= image_tag photo.images.low_resolution.url, :class => "instagram_photo"%>
+    <%= image_tag photo.images.low_resolution.url, :class => "instagram_photo", :id => "#{photo.location.latitude}_#{photo.location.longitude}"%>
   <% end %>
 
 </body>

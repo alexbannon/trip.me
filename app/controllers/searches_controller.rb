@@ -30,8 +30,18 @@ class SearchesController < ApplicationController
   end
 
   def geo_results
-    @usersearch = params[:guestsearch]
-    @instagram_photos = Instagram.media_search(37.7808851, -122.3948632, {:count => 1000})
+    @location = params[:id]
+    @location_array = @location.split("_")
+    @lat = @location_array[1].strip
+    @long = @location_array[3].strip
+    puts "-" * 100
+    puts @location
+    puts "-" * 100
+    puts @lat
+    puts "-" * 100
+    puts @long
+    puts "-" * 100
+    @instagram_photos = Instagram.media_search(@lat, @long, {:count => 1000})
     @photos_with_geo = []
     for photo in @instagram_photos do
       if photo.location != nil
