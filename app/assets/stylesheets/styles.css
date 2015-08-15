@@ -80,8 +80,8 @@ img {
     width: 100%;
   }
   .logo{
-    position: relative;
     text-align: center;
+    margin-top: -1em;
   }
   .search_bar{
     display: block;
@@ -93,6 +93,8 @@ img {
     margin-top: 1em;
     text-align: center;
     width: 100%;
+    background: black;
+    padding: 2em 0 1em 0;
   }
   #map {
     height: 250px;
