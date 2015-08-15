@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
     var lat_long_trial = window.location.pathname;
     console.log(lat_long_trial);
     var lat_long = window.location.pathname;
