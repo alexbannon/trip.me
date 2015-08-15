@@ -4,9 +4,9 @@
 
   <% @instagram_photos.each do |photo| %>
     <% if photo.location.nil? %>
-      <div class="box"><%= link_to image_tag(photo.images.standard_resolution.url), "/geo_results/lat_51.500909_long_-0.124620", :"data-no-turbolink" => true %></div>
+      <div class="box"><%= link_to image_tag(photo.images.low_resolution.url), "/geo_results/lat_51.500909_long_-0.124620", :"data-no-turbolink" => true %></div>
     <% else %>
-      <div class="box"><%= link_to image_tag(photo.images.standard_resolution.url), "/geo_results/lat_#{photo.location.latitude}_long_#{photo.location.longitude}", :"data-no-turbolink" => true %></div>
+      <div class="box"><%= link_to image_tag(photo.images.low_resolution.url), "/geo_results/lat_#{photo.location.latitude}_long_#{photo.location.longitude}", :"data-no-turbolink" => true %></div>
     <% end %>
   <% end %>
 
