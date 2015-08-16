@@ -1,8 +1,18 @@
-
-<h2>Hash Tag Results</h2>
-
 <div class="container">
+  <div class ="uberContainer">
   <% @photos_with_location.each_with_index do |photo| %>
     <div class="box"><%=link_to image_tag(photo.images.low_resolution.url, :class => "clickable_photo"), "/geo_results/lat_#{photo.location.latitude}_long_#{photo.location.longitude}", :"data-no-turbolink" => true%></div>
   <% end %>
 </div>
+</div>
+
+<script>
+window.onload = function(){
+var headline_array = window.location.search.split("=");
+var headline = headline_array[1];
+console.log(headline);
+// '<h1 class="headline">Results from "#'headline'"</h1>'
+// <h1 class="headline">Results from "#'headline'"</h1>
+$('.container').prepend('<div class="headline">Search for "#' + headline + '"</div>');
+};
+</script>
