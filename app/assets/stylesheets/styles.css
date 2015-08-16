@@ -29,7 +29,12 @@ img {
 .container {
   margin: 3em auto;
   text-align: center;
-  width: 75%;
+  width: 100%;
+}
+.headline{
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 1em;
 }
 .instagram_photo {
   height: 8em;
