@@ -45,7 +45,7 @@ class SearchesController < ApplicationController
     @photos_with_geo = []
     for photo in @instagram_photos do
       if photo.location != nil
-        if @photos_with_geo.length > 9
+        if @photos_with_geo.length > 8
           break
         else
           @photos_with_geo << photo
