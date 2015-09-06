@@ -1,7 +1,17 @@
 class SearchesController < ApplicationController
 
   def homepage
-    @instagram_photos = Instagram.tag_recent_media('vacation', {:count => 30})
+    @instagram_photos = Instagram.tag_recent_media('vacation', {:count => 33})
+    @photos_with_vacation = []
+    for photo in @instagram_photos do
+      if photo.location != nil
+        if @photos_with_vacation.length > 8
+          break
+        else
+          @photos_with_vacation << photo
+        end
+      end
+    end
   end
 
   def search_results
