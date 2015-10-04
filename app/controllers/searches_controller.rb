@@ -51,7 +51,7 @@ class SearchesController < ApplicationController
     puts "-" * 100
     puts @long
     puts "-" * 100
-    @instagram_photos = Instagram.media_search(@lat, @long, {:count => 1000})
+    @instagram_photos = Instagram.media_search(@lat, @long, {:count => 33})
     @photos_with_geo = []
     for photo in @instagram_photos do
       if photo.location != nil
